@@ -153,7 +153,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile.lifespan = 500
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`tile3`, function (sprite, location) {
-    tiles.setTileAt(location, assets.tile`tile1`)
+    tiles.setTileAt(location, assets.tile`transparency16`)
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`tile6`, function (sprite, location) {
@@ -161,11 +161,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`tile6`, function (sprite, loc
     checkLevels()
 })
 scene.onOverlapTile(SpriteKind.Projectile, assets.tile`tile4`, function (sprite, location) {
-    tiles.setTileAt(location, assets.tile`tile1`)
+    tiles.setTileAt(location, assets.tile`transparency16`)
     info.changeScoreBy(1)
 })
 scene.onOverlapTile(SpriteKind.Projectile, assets.tile`tile5`, function (sprite, location) {
-    tiles.setTileAt(location, assets.tile`tile1`)
+    tiles.setTileAt(location, assets.tile`transparency16`)
     info.changeScoreBy(-2)
 })
 let projectile: Sprite = null
